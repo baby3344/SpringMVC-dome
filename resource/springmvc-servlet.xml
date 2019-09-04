@@ -1,16 +1,4 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<!--<beans xmlns="http://www.springframework.org/schema/beans"
-       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xmlns:mvc="http://www.springframework.org/schema/mvc"
-       xmlns:p="http://www.springframework.org/schema/p"
-       xmlns:context="http://www.springframework.org/schema/context"
-       xsi:schemaLocation="http://www.springframework.org/schema/beans
-                          http://www.springframework.org/schema/beans/spring-benas.xsd
-                          http://www.springframework.org/schema/context
-                          http://www.springframework.org/schema/context/spring-context.xsd
-                          http://www.springframework.org/schema/mvc
-                          http://www.springframework.org/schema/mvc/spring-mvc.xsd">-->
-
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xmlns:p="http://www.springframework.org/schema/p"
@@ -25,7 +13,7 @@
        http://www.springframework.org/schema/context/spring-context-3.2.xsd
        http://www.springframework.org/schema/mvc
        http://www.springframework.org/schema/mvc/spring-mvc-3.2.xsd">
-   <!-- <bean name="/index.html" class="cn.qwx.controller.IndexController"/>-->
+    <!--<bean name="/index.html" class="cn.qwx.controller.IndexController"/>-->
     <context:component-scan base-package="cn.qwx.controller"/>
     <mvc:annotation-driven/>
     <!--完成试图的对应-->

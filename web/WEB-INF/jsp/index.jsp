@@ -15,5 +15,13 @@
 
 <h1>username{key:currentUser}-->${currentUser.userName}</h1>
 <h1>username{key:user}-->${user.userName}</h1>
+
+<h2>学框架就学Spring MVC！</h2>
+<form method="post" action="welcome4">
+    <p>请输入userCode:<input type="text" name="name"/></p>
+    <p>密码：:<input type="password" name="password"/></p></p>
+    <input type="submit" value="提交">
+</form>
+
 </body>
 </html>
