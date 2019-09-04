@@ -21,10 +21,15 @@ public class ConfigManager {
     }
 
     //全局访问点
-    public static synchronized ConfigManager getInstance(){
+   /* public static synchronized ConfigManager getInstance(){
         if(configManager==null){
             configManager=new ConfigManager();
         }
+        return configManager;
+    }*/
+
+    //全局访问点(饿汉模式)
+    public static ConfigManager getInstance(){
         return configManager;
     }
 
