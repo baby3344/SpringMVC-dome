@@ -2,7 +2,8 @@ package cn.qwx.entity;
 
 import java.util.Date;
 
-public class User implements java.io.Serializable{
+public class User{
+
     private Integer id; //id
     private String userCode; //用户编码
     private String userName; //用户名称
@@ -17,6 +18,25 @@ public class User implements java.io.Serializable{
     private Date creationDate; //创建时间
     private Integer modifyBy;     //更新者
     private Date modifyDate;   //更新时间
+
+    public User(){}
+    public User(Integer id,String userCode,String userName,String userPassword,Integer gender,Date birthday,String phone,
+                String address,Integer userRole,Integer createdBy,Date creationDate,Integer modifyBy,Date modifyDate){
+        this.id = id;
+        this.userCode = userCode;
+        this.userName = userName;
+        this.userPassword = userPassword;
+        this.gender = gender;
+        this.birthday = birthday;
+        this.phone = phone;
+        this.address = address;
+        this.userRole = userRole;
+        this.createdBy = createdBy;
+        this.creationDate = creationDate;
+        this.modifyBy = modifyBy;
+        this.modifyDate = modifyDate;
+    }
+
     public Integer getId() {
         return id;
     }
@@ -101,4 +121,6 @@ public class User implements java.io.Serializable{
     public void setModifyDate(Date modifyDate) {
         this.modifyDate = modifyDate;
     }
+
+
 }
