@@ -46,4 +46,15 @@
          <servlet-name>springmvc</servlet-name>
          <url-pattern>/</url-pattern>
      </servlet-mapping>
+    
+    <!--配置参数环境，指定Spring配置文件所在目录-->
+    <context-param>
+        <param-name>contextConfigLocation</param-name>
+        <param-value>classpath:applicationContext-jdbc.xml</param-value>
+    </context-param>
+    
+    <!--配置Spring的ContextLoaderListener监视器，初始化Spring容器-->
+    <listener>
+        <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+    </listener>
 </web-app>
